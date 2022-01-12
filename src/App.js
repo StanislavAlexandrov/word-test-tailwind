@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/nav';
+import Star from './components/star';
+import ProgressBar from './components/progress-bar';
+import Correct from './components/correct';
+import Card from './components/card';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App ">
+            <Nav></Nav>
+            <Star hearts={3}></Star>
+            <ProgressBar progressPercentage={50}></ProgressBar>
+            <Correct correctAnswers={7}></Correct>
+            <Card></Card>
+        </div>
+    );
 }
 
 export default App;
