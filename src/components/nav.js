@@ -3,7 +3,7 @@ import React from 'react';
 const Nav = () => {
     return (
         <>
-            <div className="bg-red-400 flex flex-row justify-around  p-8">
+            <div className="bg-red-400 flex flex-row justify-around  p-8 ">
                 <div className=" ">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ const Nav = () => {
                 <span className=" font-semibold text-s ">
                     English exercises
                 </span>
-                <div className="bg-blue-800 ">
+                <div>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"

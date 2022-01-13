@@ -1,22 +1,26 @@
 import React from 'react';
 
-function Card({ questions, questionNumber = 0 }) {
+function Card({ questions, currentStep, setCurrentStep }) {
     return (
         <>
             <div className="flex justify-center ">
                 <div className="w-1/2 m-1 ">
                     <h1 className="font-bold">
-                        {questions[questionNumber].title}
+                        {questions[currentStep].title}
                     </h1>
                 </div>
             </div>
             <div className="flex justify-center">
                 <div className=" flex  justify-center w-1/2">
                     <div className="   ">
-                        {questions[questionNumber].answers.map((element) => (
+                        {questions[currentStep].answers.map((element) => (
                             <button
                                 className="font-mono rounded-lg border-solid border-2 p-4 m-4 w-72 text-center shadow-lg hover:shadow-2xl"
-                                onClick={() => console.log(123)}
+                                onClick={
+                                    currentStep + 1 < questions.length
+                                        ? () => setCurrentStep((x) => ++x)
+                                        : () => setCurrentStep(0)
+                                }
                             >
                                 {element}
                             </button>

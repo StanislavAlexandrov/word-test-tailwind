@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-function ProgressBar({ progressPercentage }) {
+function ProgressBar({ width, currentStep, value, setValue }) {
+    useEffect(() => setValue(200), [currentStep]);
+
     return (
-        <div className="flex justify-center m-2">
-            <div className="flex w-1/2  bg-gray-200 h-6 rounded-lg">
-                <div
-                    className={`bg-red-400 h-6 w-[${progressPercentage}%] rounded-lg `}
-                ></div>
+        <div className="flex justify-center">
+            <div className="flex flex-col justify-center">
+                <div className="progress-div " style={{ width: width }}>
+                    <div
+                        style={{ width: `${value}px` }}
+                        className="progress "
+                    />
+                </div>
             </div>
         </div>
     );
