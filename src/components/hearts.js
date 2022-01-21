@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 function Hearts({ hearts }) {
     return (
         <div className="flex justify-center flex-row">
-            <div className="flex  mt-4 mb-4   justify-start w-[800px]">
+            <div className="flex  mt-4 mb-4   justify-start w-[800px] z-50">
                 <motion.div
                     animate={{
                         scale: hearts < 1 ? [1, 20, 20, 1, 1] : 1,

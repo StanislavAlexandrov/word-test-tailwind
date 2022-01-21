@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { v4 as uuidv4 } from 'uuid';
+import { useEffect } from 'react/cjs/react.development';
 
 function Card({ questions, hearts, setHearts }) {
     const [currentStep, setCurrentStep] = useState(0);
@@ -18,10 +19,11 @@ function Card({ questions, hearts, setHearts }) {
                 ? setCurrentStep((i) => ++i)
                 : setHearts((i) => --i);
         }
-        if (hearts === 1) {
-            setTimeout(() => handleStart(), 1000);
-        }
     };
+
+    if (hearts === 0) {
+        setTimeout(() => handleStart(), 1000);
+    }
 
     return (
         <>
