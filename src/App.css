@@ -5,15 +5,18 @@
 .progress-div {
     background-color: rgb(233, 233, 233);
 
-    width: 200px;
-    border-radius: 0.5rem;
+    width: 800px;
 }
 
 .progress {
-    background-color: #f87171;
-    width: 200px;
+    background-color: rgb(231, 105, 107);
+    width: 800px;
     height: 10px;
-    border-radius: 1rem;
+
     transition: 1s ease;
     transition-delay: 0.5s;
+}
+
+.navbar {
+    background-color: rgb(231, 105, 107);
 }

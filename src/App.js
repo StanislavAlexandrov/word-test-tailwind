@@ -1,30 +1,33 @@
 import './App.css';
 import Nav from './components/nav';
-import Star from './components/star';
+import Hearts from './components/hearts';
 import ProgressBar from './components/progress-bar';
 import Correct from './components/correct';
 import Card from './components/card';
 import { questions } from './data/questions';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
     const [currentStep, setCurrentStep] = useState(0);
     const [value, setValue] = useState(0);
+    const [hearts, setHearts] = useState(3);
 
     return (
-        <div className="App">
+        <div className="App ">
             <Nav></Nav>
-            <Star hearts={3}></Star>
+            {<Hearts hearts={hearts}></Hearts>}
             <ProgressBar
                 currentStep={currentStep}
                 value={value}
                 setValue={setValue}
             ></ProgressBar>
-            <Correct correctAnswers={7}></Correct>
+            <Correct correctAnswers={'n/a'}></Correct>
             <Card
                 questions={questions}
                 currentStep={currentStep}
                 setCurrentStep={setCurrentStep}
+                hearts={hearts}
+                setHearts={setHearts}
             ></Card>
         </div>
     );

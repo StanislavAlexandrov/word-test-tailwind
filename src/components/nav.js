@@ -3,7 +3,7 @@ import React from 'react';
 const Nav = () => {
     return (
         <>
-            <div className="bg-red-400 flex flex-row justify-around  p-8 ">
+            <div className="navbar flex flex-row justify-around  p-6 ">
                 <div className=" ">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +21,8 @@ const Nav = () => {
                     </svg>
                 </div>
 
-                <span className=" font-semibold text-s ">
-                    English exercises
+                <span className=" font-extrabold font-mono text-xl ">
+                    Vocabulary test
                 </span>
                 <div>
                     <svg
