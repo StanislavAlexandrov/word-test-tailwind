@@ -1,5 +1,7 @@
 # Vocabulary test inspired by Memrise Speed Review
 
+[Live version](https://stanislavalexandrov.github.io/word-test-tailwind)
+
 Built with:
 
 -   Create React App
