@@ -57,7 +57,6 @@ function App() {
             cancelAnimationFrame(RAFRef.current);
             setCurrentStep(0);
             setIsStarting(true);
-            //setTimeout(() => handleStart(), 1000); //this needs to be set
         }
     }, [currentStep, hearts]);
 
@@ -111,7 +110,7 @@ function App() {
                                             key={uuidv4()}
                                             whileHover={{ scale: 1.1 }}
                                             whileTap={{ scale: 0.9 }}
-                                            className="font-sans text-2xl rounded-lg border-solid border-2 p-4 m-4 w-72 text-center font-bold shadow-lg hover:shadow-2xl"
+                                            className="font-sans text-2xl rounded-lg border-solid border-2 p-4 m-4 w-72 text-center font-bold shadow-lg hover:shadow-2xl shadow-gray-300 bg-gray-200"
                                             onClick={() => handleClick(id)}
                                             disabled={isStarting}
                                         >
@@ -129,7 +128,7 @@ function App() {
                 {isStarting ? (
                     <motion.button
                         onClick={handleStart}
-                        className="font-bold text-4xl m-9 text-red-600 "
+                        className="font-bold text-4xl m-9 text-yellow-400 "
                         animate={{
                             scale: [2, 2, 1, 2, 2],
                         }}
