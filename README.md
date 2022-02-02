@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Vocabulary test inspired by Memrise Speed Review
+
+Built with:
+
+-   Create React App
+-   TailwindCSS [TailwindCSS](https://tailwindcss.com/)
+-   Framer Motion [Framer Motion](https://github.com/framer/motion)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
