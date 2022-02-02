@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/word-test-tailwind/static/css/main.004cb115.css",
-    "main.js": "/word-test-tailwind/static/js/main.a28a13ad.js",
+    "main.css": "/word-test-tailwind/static/css/main.283193ec.css",
+    "main.js": "/word-test-tailwind/static/js/main.f13a37f5.js",
     "static/js/787.44efc297.chunk.js": "/word-test-tailwind/static/js/787.44efc297.chunk.js",
     "index.html": "/word-test-tailwind/index.html",
-    "main.004cb115.css.map": "/word-test-tailwind/static/css/main.004cb115.css.map",
-    "main.a28a13ad.js.map": "/word-test-tailwind/static/js/main.a28a13ad.js.map",
+    "main.283193ec.css.map": "/word-test-tailwind/static/css/main.283193ec.css.map",
+    "main.f13a37f5.js.map": "/word-test-tailwind/static/js/main.f13a37f5.js.map",
     "787.44efc297.chunk.js.map": "/word-test-tailwind/static/js/787.44efc297.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.004cb115.css",
-    "static/js/main.a28a13ad.js"
+    "static/css/main.283193ec.css",
+    "static/js/main.f13a37f5.js"
   ]
 }
