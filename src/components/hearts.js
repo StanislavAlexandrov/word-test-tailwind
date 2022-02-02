@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 function Hearts({ hearts }) {
     return (
-        <div className="flex justify-center flex-row">
-            <div className="flex  mt-4 mb-4   justify-start w-[800px] z-50">
+        <div className="flex  flex-row justify-between mr-4 sm:mr-64 sm:ml-64 ml-4 mt-4 ">
+            <div className="">
                 <motion.div
                     animate={{
                         scale: hearts < 1 ? [1, 20, 20, 1, 1] : 1,
                         rotate: hearts < 1 ? [0, 0, 270, 270, 0] : 0,
-                        translateX: hearts < 1 ? '350px' : '0px',
-                        translateY: hearts < 1 ? '300px' : '0px',
+                        /*translateX: hearts < 1 ? '350px' : '0px',
+                        translateY: hearts < 1 ? '300px' : '0px',*/
                     }}
                     className="flex w-[100px] "
                 >
@@ -23,7 +23,7 @@ function Hearts({ hearts }) {
                                 : 'rgb(211,211,211)'
                         }
                         xmlns="http://www.w3.org/2000/svg"
-                        className="sc-10a379p-0 knrAHI pl-1 justify-center"
+                        className="sc-10a379p-0 knrAHI pl-1"
                         transform-origin="18.486799240112305px 18.014984041452408px"
                         opacity="1"
                     >
@@ -38,7 +38,7 @@ function Hearts({ hearts }) {
                                 : 'rgb(211,211,211)'
                         }
                         xmlns="http://www.w3.org/2000/svg"
-                        className="sc-10a379p-0 knrAHI pl-1 justify-center"
+                        className="sc-10a379p-0 knrAHI pl-1 "
                         transform-origin="18.486799240112305px 18.014984041452408px"
                         opacity="1"
                     >
@@ -56,7 +56,7 @@ function Hearts({ hearts }) {
                                 : 'rgb(211,211,211)'
                         }
                         xmlns="http://www.w3.org/2000/svg"
-                        className="sc-10a379p-0 knrAHI pl-1 justify-center"
+                        className="sc-10a379p-0 knrAHI pl-1 "
                         transform-origin="18.486799240112305px 18.014984041452408px"
                         opacity="1"
                     >
@@ -64,8 +64,8 @@ function Hearts({ hearts }) {
                     </motion.svg>
                 </motion.div>
             </div>
-            <div className="flex mt-4 mb-4 ">
-                <span className="text-sm mt-1 ">{hearts}</span>
+            <div className="flex mb-4 ">
+                <span className="text-sm mr-1 ">{hearts}</span>
             </div>
         </div>
     );

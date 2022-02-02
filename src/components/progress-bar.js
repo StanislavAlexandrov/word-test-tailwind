@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 function ProgressBar({ width, currentStep, value, setValue }) {
-    useEffect(() => setValue(800), [currentStep]);
+    useEffect(() => setValue(800), [currentStep, setValue]);
 
     return (
         <div className="flex justify-center ">

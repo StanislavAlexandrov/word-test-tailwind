@@ -3,11 +3,11 @@ import React from 'react';
 const Nav = () => {
     return (
         <>
-            <div className="navbar flex flex-row justify-around  p-6 ">
-                <div className=" ">
+            <div className="navbar flex justify-between">
+                <div className=" sm:pl-64 pl-6">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
+                        className="h-6 w-6 "
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -24,7 +24,7 @@ const Nav = () => {
                 <span className=" font-extrabold font-mono text-xl ">
                     Vocabulary test
                 </span>
-                <div>
+                <div className="sm:pr-64 pr-6">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"
