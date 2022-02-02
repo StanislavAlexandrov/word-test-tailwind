@@ -2,21 +2,35 @@
     text-align: center;
 }
 
-.progress-div {
-    background-color: rgb(233, 233, 233);
-
-    width: 800px;
+/* .progress {
+  border: 2px solid;
+  display: block;
+  margin-left: 200px;
+  width: 0px;
+  height: 20px;
+  background-color: #ccc;
 }
 
-.progress {
-    background-color: rgb(231, 105, 107);
-    width: 800px;
-    height: 10px;
-
-    transition: 1s ease;
-    transition-delay: 0.5s;
-}
+.progress._active {
+  width: 400px;
+  transition: all var(--progress, 10s);
+} */
 
 .navbar {
     background-color: rgb(231, 105, 107);
+}
+
+.progress {
+    /*border: 1px solid;*/
+    /* border-radius: 10px;*/
+    display: block;
+    /* margin-left: 200px; change width below to 0 */
+    width: 0;
+    height: 30px;
+    background-color: rgb(231, 105, 107);
+}
+
+.progress._active {
+    width: 800px;
+    transition: all var(--progress, 5s);
 }
