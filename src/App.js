@@ -72,7 +72,10 @@ function App() {
     };
 
     return (
-        <div className="App min-h-screen flex flex-col   overflow-hidden">
+        <>
+            <div className="App min-w-screen flex flex-col   overflow-hidden">
+                {' '}
+            </div>
             <Nav></Nav>
 
             <Hearts hearts={hearts}></Hearts>
@@ -131,7 +134,7 @@ function App() {
                     </motion.button>
                 ) : null}
             </div>
-        </div>
+        </>
     );
 }
 
