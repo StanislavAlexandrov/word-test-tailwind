@@ -2,6 +2,12 @@
 
 [Live version](https://stanislavalexandrov.github.io/word-test-tailwind)
 
+
+
+https://user-images.githubusercontent.com/8924043/152461235-4f6d3303-96bb-45be-bf6b-7a826cf5948f.mov
+
+
+
 Built with:
 
 -   Create React App
