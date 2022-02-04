@@ -11,8 +11,8 @@ https://user-images.githubusercontent.com/8924043/152461235-4f6d3303-96bb-45be-b
 Built with:
 
 -   Create React App
--   TailwindCSS [TailwindCSS](https://tailwindcss.com/)
--   Framer Motion [Framer Motion](https://github.com/framer/motion)
+-   [TailwindCSS](https://tailwindcss.com/)
+-   [Framer Motion](https://github.com/framer/motion)
 
 ## Getting Started with Create React App
 
